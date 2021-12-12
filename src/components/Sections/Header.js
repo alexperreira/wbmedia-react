@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 	return (
@@ -9,10 +10,10 @@ const Header = () => {
 					<nav className='header-nav'>
 						<ul>
 							<li>
-								<a href=''>Packages</a>
+								<NavLink></NavLink>
 							</li>
 							<li>
-								<a href='faq.html'>FAQ</a>
+								<a href='#'>FAQ</a>
 							</li>
 							<li>
 								<a href='https://www.honeybook.com/widget/w_bilbao_media_llc_170936/cf_id/5fda3e235ff8e50a0f01364c'>
