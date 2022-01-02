@@ -1,0 +1,17 @@
+.container {
+	position: fixed;
+	display: flex;
+	width: 100vw;
+	max-width: 2000px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 100;
+}
+
+.logo {
+	width: 80px;
+	margin: 5px;
+	/* Fallback img */
+	/* background: url('../../assets/WB-Submark-CMYK.png'); */
+}
