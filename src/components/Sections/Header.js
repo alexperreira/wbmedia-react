@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/WB-Submark-CMYK.png';
 
 const Header = () => {
 	return (
 		<React.Fragment>
 			<header>
 				<div className='container'>
-					<img src='' alt='' className='logo' />
+					<img src={logo} alt='' className='logo' />
 					<nav className='header-nav'>
 						<ul>
 							<li>
