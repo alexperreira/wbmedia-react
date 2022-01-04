@@ -1,0 +1,54 @@
+section.banner {
+	/* position: relative; */
+	height: 92vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner h4 {
+	font-family: 'Hello January';
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.image-divider {
+	background-image: url('/src/assets/hero-image/DSC05597.png');
+	height: 50%;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+}
+
+.color-divider {
+	height: 50%;
+	width: 100%;
+	background-color: #e2a42c;
+	font-family: 'Pierson Light';
+	font-size: 3rem;
+	letter-spacing: 0.2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+}
+
+.color-divider h3 {
+	text-transform: uppercase;
+}
+
+.color-divider button {
+	border: none;
+	border-radius: 0.3rem;
+	text-align: center;
+	display: flex;
+}

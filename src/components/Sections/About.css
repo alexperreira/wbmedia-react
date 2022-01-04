@@ -1,3 +1,7 @@
+section.about {
+	height: 92vh;
+}
+
 section.about > div.container {
 	display: flex;
 	justify-content: center;
@@ -8,6 +12,60 @@ section.about > div.container {
 img.whitney-profile-1 {
 	position: relative;
 	transform: translate(-50px, -50px);
-	width: 300px;
+	width: 30rem;
 	z-index: 10;
+	border: 10px solid #a79d8e;
+	padding: 20px 20px;
+}
+
+div.decor-div-1 {
+	position: relative;
+	height: 100px;
+}
+
+div.decor-div-2 {
+	position: relative;
+	height: 100px;
+}
+
+img.decor-img-1 {
+	width: 400px;
+	transform: translate(160px, -140px);
+	z-index: 0;
+}
+
+img.decor-img-2 {
+	width: 400px;
+	transform: scale(1.5) translate(-180px, -180px) rotate(180deg);
+}
+
+div.about-text {
+	z-index: 100000;
+}
+
+div.about-text > p {
+	color: #715845;
+	width: 600px;
+	line-height: 2em;
+	font-size: 1.125rem;
+}
+
+div.inquire {
+	margin: auto;
+	padding-top: 1.25rem;
+	text-align: center;
+}
+
+button.inquire-button {
+	background-color: #aa480b;
+	padding: 15px 25px;
+	border: none;
+	border-radius: 5px;
+}
+
+button.inquire-button a {
+	color: #fff;
+	font-size: 1.25rem;
+	margin: auto;
+	padding: 0.625rem;
 }
