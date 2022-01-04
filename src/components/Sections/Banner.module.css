@@ -9,23 +9,27 @@ section.banner {
 .banner h4 {
 	font-family: 'Hello January';
 	font-size: 5.5rem;
+	padding-top: 2rem;
 	font-weight: 400;
 	color: #fff;
 	text-align: center;
 	justify-content: center;
 	align-content: center;
-	align-items: center;
+	/* align-items: center; */
 }
 
-.image-divider {
+.imageDivider {
 	background-image: url('/src/assets/hero-image/DSC05597.png');
 	height: 50%;
 	width: 100%;
 	background-position: center center;
 	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	justify-content: center;
 }
 
-.color-divider {
+.colorDivider {
 	height: 50%;
 	width: 100%;
 	background-color: #e2a42c;
@@ -42,11 +46,11 @@ section.banner {
 	text-shadow: 0 0 5px #000;
 }
 
-.color-divider h3 {
+.colorDivider h3 {
 	text-transform: uppercase;
 }
 
-.color-divider button {
+.colorDivider button {
 	border: none;
 	border-radius: 0.3rem;
 	text-align: center;

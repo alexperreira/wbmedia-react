@@ -2,22 +2,22 @@ import React from 'react';
 import eucalyptus from '../../assets/graphics/eucalyptus.png';
 import whitney from '../../assets/whit-profile-new.jpg';
 import branch from '../../assets/graphics/branch.svg';
-import './About.css';
+import styles from './About.module.css';
 
 const About = () => {
 	return (
-		<section className='about'>
-			<div className='container'>
-				<div className='about-profile'>
-					<div className='decor-div-1'>
-						<img className='decor-img-1' src={eucalyptus} alt='' />
+		<section className={styles.about}>
+			<div className={styles.container}>
+				<div className=''>
+					<div className={styles.decorDiv1}>
+						<img className={styles.decorImg1} src={eucalyptus} alt='' />
 					</div>
-					<img src={whitney} className='whitney-profile-1' alt='' />
-					<div className='decor-div-2'>
-						<img src={branch} className='decor-img-2' alt='' />
+					<img src={whitney} className={styles.whitneyProfile1} alt='' />
+					<div className={styles.decorDiv2}>
+						<img src={branch} className={styles.decorImg2} alt='' />
 					</div>
 				</div>
-				<div className='about-text'>
+				<div className={styles.aboutText}>
 					<p>
 						Hello there, and thank you for inquiring! I cannot wait to work with
 						you! A little about myself before you get to scrolling. I am 26
@@ -44,8 +44,8 @@ const About = () => {
 						am a let's have a drink together and laugh until we cry type of
 						photographer. So if that interests you, you're in the right spot!
 					</p>
-					<div className='inquire'>
-						<button className='inquire-button'>
+					<div className={styles.inquire}>
+						<button className={styles.inquireButton}>
 							<a
 								target='_blank'
 								rel='noreferrer'

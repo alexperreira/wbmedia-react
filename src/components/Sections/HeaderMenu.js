@@ -1,28 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './HeaderMenu.css';
+import styles from './HeaderMenu.module.css';
 
 import logo from '../../assets/WB-Submark-CMYK.png';
 
 const Header = () => {
 	return (
 		<React.Fragment>
-			<header className='nav-container'>
-				<img src={logo} alt='' className='logo' />
-				<nav className='header-nav'>
+			<header className={styles.navContainer}>
+				<img src={logo} alt='' className={styles.logo} />
+				<nav className={styles.headerNav}>
 					<ul>
 						<li>
-							<Link to='/' className='navLink'>
+							<Link to='/' className={styles.navLink}>
 								Home
 							</Link>
 						</li>
 						<li>
-							<Link to='packages' className='navLink'>
+							<Link to='packages' className={styles.navLink}>
 								Packages
 							</Link>
 						</li>
 						<li>
-							<Link to='faq' className='navLink'>
+							<Link to='faq' className={styles.navLink}>
 								FAQ
 							</Link>
 						</li>
