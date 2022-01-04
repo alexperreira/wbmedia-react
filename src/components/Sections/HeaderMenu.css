@@ -1,4 +1,4 @@
-.container {
+.nav-container {
 	position: fixed;
 	display: flex;
 	width: 100vw;
@@ -10,8 +10,30 @@
 }
 
 .logo {
-	width: 80px;
+	width: 5rem;
 	margin: 5px;
 	/* Fallback img */
 	/* background: url('../../assets/WB-Submark-CMYK.png'); */
+}
+
+.header-nav {
+	display: flex;
+	margin-right: 20px;
+}
+
+nav > ul {
+	display: flex;
+	align-items: center;
+}
+
+.navLink,
+ul,
+a {
+	list-style-type: none;
+	text-decoration: none;
+	color: #aa480b;
+}
+
+li {
+	padding: 20px;
 }

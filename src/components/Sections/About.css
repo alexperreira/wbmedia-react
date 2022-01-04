@@ -1,0 +1,13 @@
+section.about > div.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+img.whitney-profile-1 {
+	position: relative;
+	transform: translate(-50px, -50px);
+	width: 300px;
+	z-index: 10;
+}

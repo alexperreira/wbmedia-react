@@ -2,13 +2,9 @@
 	font-family: 'Hello January';
 	src: url('assets/fonts/Hello\ January\ script\ cyrillic\ Script.otf')
 		format('opentype');
-<<<<<<< HEAD
+
 	/* url('assets/fonts/Hello\ January\ symbols\ Script.otf') format('opentype'); */
 }
-@import url('assets/fonts/Hello\ January\ symbols\ Script.otf');
-=======
-}
->>>>>>> refs/remotes/origin/master
 
 @font-face {
 	font-family: 'Pierson Light';
@@ -26,4 +22,5 @@ body {
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 	height: 100vh;
+	font-family: 'Raleway';
 }
