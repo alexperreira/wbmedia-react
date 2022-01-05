@@ -8,9 +8,9 @@ section.banner {
 
 .banner h4 {
 	font-family: 'Hello January';
-	font-size: 5.5rem;
+	font-size: 6rem;
 	padding-top: 2rem;
-	font-weight: 400;
+	font-weight: 300;
 	color: #fff;
 	text-align: center;
 	justify-content: center;
@@ -33,9 +33,6 @@ section.banner {
 	height: 50%;
 	width: 100%;
 	background-color: #e2a42c;
-	font-family: 'Pierson Light';
-	font-size: 3rem;
-	letter-spacing: 0.2em;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -43,16 +40,29 @@ section.banner {
 	align-items: center;
 	justify-content: center;
 	color: #fff;
-	text-shadow: 0 0 5px #000;
 }
 
 .colorDivider h3 {
 	text-transform: uppercase;
+	font-family: 'Pierson Light';
+	font-size: 3rem;
+	letter-spacing: 0.2em;
+	text-shadow: 0 0 5px #000;
+}
+
+.colorDivider p {
+	font-family: 'Raleway';
+	font-size: 1.4rem;
+	line-height: 2rem;
+	width: 60%;
 }
 
 .colorDivider button {
 	border: none;
 	border-radius: 0.3rem;
+	font-size: 1.2rem;
 	text-align: center;
 	display: flex;
+	padding: 1rem 2rem;
+	margin-top: 2rem;
 }

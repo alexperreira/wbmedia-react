@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Outlet, Link } from 'react-router-dom';
+import Header from '../Sections/Header';
 
 const FAQ = () => {
 	return (
 		<div>
-			<h1>This is the FAQ page</h1>
-			<Link to='/'>Back</Link>
+			<Header />
 		</div>
 	);
 };

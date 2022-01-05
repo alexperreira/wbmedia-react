@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './HeaderMenu.module.css';
+import styles from './Header.module.css';
 
 import logo from '../../assets/WB-Submark-CMYK.png';
 
@@ -17,7 +17,7 @@ const Header = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to='packages' className={styles.navLink}>
+							<Link to='/packages' className={styles.navLink}>
 								Packages
 							</Link>
 						</li>
