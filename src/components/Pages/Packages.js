@@ -5,6 +5,7 @@ import React from 'react';
 // Import components
 import Card from '../UI/Card';
 import PackageItem from '../UI/PackageItem';
+import styles from './Packages.module.css';
 
 const PACKAGES_OPTIONS = [
 	{
@@ -31,11 +32,10 @@ const Packages = () => {
 	));
 
 	return (
-		<div>
-			<Card>
-				{' '}
+		<div className={styles.packages}>
+			{/* <Card>
 				<ul>{packagesList}</ul>
-			</Card>
+			</Card> */}
 		</div>
 	);
 };

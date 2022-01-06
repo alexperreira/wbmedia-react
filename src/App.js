@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Pages/Home';
 import Packages from './components/Pages/Packages';
 import FAQ from './components/Pages/FAQ';
+import PackageDetail from './components/Pages/PackageDetail';
 
 // Import Components
 import Header from './components/Sections/Header';
@@ -17,7 +18,9 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='packages' element={<Packages />} />
+				<Route path='packages' element={<Packages />}>
+					<Route path='packages/:packageType' element={<PackageDetail />} />
+				</Route>
 				<Route path='faq' element={<FAQ />} />
 			</Routes>
 			{/* <Button onClick={() => {
