@@ -1,41 +1,24 @@
 import React from 'react';
-// import { Link, Outlet } from 'react-router-dom';
-// import styles from './Packages.module.css';
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 // Import components
-import Card from '../UI/Card';
-import PackageItem from '../UI/PackageItem';
+// import PackageItem from '../UI/PackageItem';
+import Options from '../UI/Options';
 import styles from './Packages.module.css';
 
-const PACKAGES_OPTIONS = [
-	{
-		id: '0',
-		name: 'Seniors',
-	},
-	{
-		id: '1',
-		name: 'Family Photos',
-	},
-	{
-		id: '2',
-		name: 'Weddings',
-	},
-	{
-		id: '3',
-		name: 'Couples',
-	},
-];
+// const types = ['Seniors', 'Couples', 'Weddings', 'Families'];
 
 const Packages = () => {
-	const packagesList = PACKAGES_OPTIONS.map((option) => (
-		<PackageItem id={option.id} key={option.id} name={option.name} />
-	));
+	// const packagesList = PACKAGES_OPTIONS.map((option) => (
+	// 	<PackageItem id={option.id} key={option.id} name={option.name} />
+	// ));
+	// const alignCenter = { display: 'flex', alignItems: 'center' };
 
 	return (
 		<div className={styles.packages}>
-			{/* <Card>
-				<ul>{packagesList}</ul>
-			</Card> */}
+			<div className={styles.container}>
+				<Options />
+			</div>
 		</div>
 	);
 };

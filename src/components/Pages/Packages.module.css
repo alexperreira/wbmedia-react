@@ -1,8 +1,48 @@
 .packages {
 	height: 100vh;
+	/* width: 80%; */
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* background: rgba(0, 0, 0, 0.6); */
+	background: rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+}
+
+.container {
+	width: 80%;
+	display: flex;
+}
+
+.titleText {
+	font-size: 5rem;
+	font-family: 'Hello January';
+	color: #aa480b;
+	font-weight: 400;
+}
+
+/* .alignCenter {
+	align-items: center;
+	background: black;
+} */
+
+.card {
+	background: white;
+	border-radius: 0.5rem;
+	height: 40rem;
+	width: 30rem;
+	margin: 20rem;
+	display: flex;
+	justify-content: center;
+}
+
+.inactive {
+	display: none;
+}
+
+.active {
+	display: flex;
 }

@@ -1,0 +1,18 @@
+.options {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.optionsGroup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.optionsGroup li {
+	cursor: pointer;
+}

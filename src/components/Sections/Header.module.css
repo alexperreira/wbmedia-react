@@ -14,14 +14,14 @@
 .logo {
 	width: 4.5rem;
 	height: auto;
-	margin: 0.8rem 1.2rem;
+	margin: 0.8rem 2.5rem;
 	/* Fallback img */
 	/* background: url('../../assets/WB-Submark-CMYK.png'); */
 }
 
 .headerNav {
 	display: flex;
-	margin-right: 20px;
+	margin-right: 2.5rem;
 }
 
 nav > ul {
@@ -35,6 +35,7 @@ a {
 	list-style-type: none;
 	text-decoration: none;
 	color: #aa480b;
+	font-size: 1.2rem;
 }
 
 li {
