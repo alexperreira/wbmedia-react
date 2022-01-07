@@ -1,9 +1,7 @@
 .packages {
 	height: 100vh;
-	/* width: 80%; */
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	/* margin-left: auto; */
+	/* margin-right: auto; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
