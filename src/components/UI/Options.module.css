@@ -1,22 +1,45 @@
 .options {
 	position: absolute;
-	top: 10rem;
+	height: auto;
+	width: 100vw;
+	top: 0;
 	left: 0;
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
 	justify-content: center;
 	align-items: center;
 	z-index: 10;
 }
 
 .optionsGroup {
+	position: absolute;
+	top: 80vh;
+	/* left: 0; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	z-index: 5000;
 }
 
 .optionsGroup li {
 	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20rem;
+	height: 7.5rem;
+	margin: 1rem;
+	padding: 2rem 2.5rem;
+	background: rgba(170, 56, 11, 0.6);
+	border-radius: 0.9rem;
+	font-family: 'Hello January';
+	color: #fff;
+	font-size: 4.5rem;
+	box-shadow: 2px 2px 8px #000;
+}
+
+.optionsGroup li:hover {
+	transform: scale(1.1);
 }

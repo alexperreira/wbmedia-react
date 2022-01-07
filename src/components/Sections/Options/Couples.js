@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './Couples.module.css';
+import classes from './AllPackages.module.css';
 
-function Couples() {
+const Couples = () => {
 	return (
-		<div className={styles.couples}>
-			<h1>Couples tab display</h1>
-		</div>
+		<Fragment>
+			<div className={` ${classes.packagesHero} ${styles.couples}`} />
+		</Fragment>
 	);
-}
+};
 
 export default Couples;

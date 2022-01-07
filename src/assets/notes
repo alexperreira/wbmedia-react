@@ -1,13 +1,14 @@
 Site colors:
 
-Burnt orange- #aa380b
-Yellow- #e2a42c
-Cyan- #0d9ea0
+Burnt orange- #aa380b rgb(170, 56, 11)
+Yellow- #e2a42c rgb(226, 164, 44)
+Cyan- #0d9ea0 rgb(13, 158, 160)
 Dark gray- #242424
 Light gray- #f9f9fa
 White- #ffffff
 Gray- #878687
 Brown- #a79d8e
+#ded5cc
 #715845
 
 

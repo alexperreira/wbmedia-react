@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './Families.module.css';
+import classes from './AllPackages.module.css';
 
 const Families = () => {
 	return (
-		<div className={styles.families}>
-			<h1>Families tab display</h1>
-		</div>
+		<Fragment>
+			<div className={`${styles.families} ${classes.packagesHero}`} />
+		</Fragment>
 	);
 };
 

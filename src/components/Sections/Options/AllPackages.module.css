@@ -1,0 +1,44 @@
+.page {
+	height: 100vh;
+}
+
+.packagesHero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	z-index: 0;
+}
+
+.imageOne {
+	width: 30rem;
+	margin-right: 20rem;
+}
+
+.packageLeft {
+	margin-left: 20rem;
+	padding: 0 2rem;
+	border: 1px solid #ded5cc;
+	z-index: 20;
+	color: #aa380b;
+}
+
+.title {
+	font-family: 'Hello January';
+	font-weight: 400;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.price {
+	color: #000;
+}
+
+.packageLeft li {
+	list-style: inside;
+}

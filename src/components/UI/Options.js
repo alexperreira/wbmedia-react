@@ -8,11 +8,7 @@ import Families from '../Sections/Options/Families';
 import Weddings from '../Sections/Options/Weddings';
 import Couples from '../Sections/Options/Couples';
 
-// const types = ['Seniors', 'Families', 'Weddings', 'Couples'];
-
-// const alignCenter = { display: 'flex', alignItems: 'center' };
-
-function Options() {
+function Options(props) {
 	const [activeOption, setActiveOption] = useState('seniors');
 
 	const handleSeniors = () => {
@@ -31,7 +27,7 @@ function Options() {
 		setActiveOption('couples');
 	};
 
-	const renderElement = () => {
+	const renderElement = (props) => {
 		if (activeOption === 'seniors') {
 			return <Seniors />;
 		} else if (activeOption === 'families') {
@@ -43,30 +39,44 @@ function Options() {
 		}
 	};
 
+	const scrollEvent = () => {
+		window.scrollTo({
+			top: document.documentElement.clientHeight,
+			left: 0,
+			behavior: 'smooth',
+		});
+	};
+
+	// Create function that when hovering over package option, the backdrop changes images and darkens other options
+
 	return (
 		<div className={styles.options}>
 			<ul className={styles.optionsGroup}>
 				<li
 					className={activeOption === 'seniors' ? 'active' : ''}
-					onClick={handleSeniors}
+					onMouseEnter={handleSeniors}
+					onClick={scrollEvent}
 				>
 					Seniors
 				</li>
 				<li
 					className={activeOption === 'families' ? 'active' : ''}
-					onClick={handleFamilies}
+					onMouseEnter={handleFamilies}
+					onClick={scrollEvent}
 				>
 					Families
 				</li>
 				<li
 					className={activeOption === 'weddings' ? 'active' : ''}
-					onClick={handleWeddings}
+					onMouseEnter={handleWeddings}
+					onClick={scrollEvent}
 				>
 					Weddings
 				</li>
 				<li
 					className={activeOption === 'couples' ? 'active' : ''}
-					onClick={handleCouples}
+					onMouseEnter={handleCouples}
+					onClick={scrollEvent}
 				>
 					Couples
 				</li>

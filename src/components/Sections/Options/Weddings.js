@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './Weddings.module.css';
+import classes from './AllPackages.module.css';
 
-function Weddings() {
+const Weddings = () => {
 	return (
-		<div className={styles.weddings}>
-			<h1>Weddings tab display</h1>
-		</div>
+		<Fragment>
+			<div className={`${styles.weddings} ${classes.packagesHero}`}></div>
+		</Fragment>
 	);
-}
+};
 
 export default Weddings;
