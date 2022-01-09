@@ -15,17 +15,23 @@
 	z-index: 0;
 }
 
-.imageOne {
+.image {
 	width: 30rem;
-	margin-right: 20rem;
 }
 
-.packageLeft {
-	margin-left: 20rem;
+.package {
 	padding: 0 2rem;
 	border: 1px solid #ded5cc;
 	z-index: 20;
 	color: #aa380b;
+}
+
+.left {
+	margin-left: 20rem;
+}
+
+.right {
+	margin-right: 20rem;
 }
 
 .title {
