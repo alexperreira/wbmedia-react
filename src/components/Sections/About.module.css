@@ -58,17 +58,3 @@ div.inquire {
 	padding-top: 1.25rem;
 	text-align: center;
 }
-
-button.inquireButton {
-	background-color: #aa480b;
-	padding: 15px 25px;
-	border: none;
-	border-radius: 5px;
-}
-
-button.inquireButton a {
-	color: #fff;
-	font-size: 1.25rem;
-	margin: auto;
-	padding: 0.625rem;
-}

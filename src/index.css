@@ -7,6 +7,16 @@
 }
 
 @font-face {
+	font-family: 'Brian-Strait';
+	src: url('assets/fonts/Brian-Strait.ttf.woff') format('woff'),
+		url('assets/fonts/Brian-Strait.ttf.svg#Brian-Strait') format('svg'),
+		url('assets/fonts/Brian-Strait.ttf.eot'),
+		url('assets/fonts/Brian-Strait.ttf.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'Pierson Light';
 	src: url('assets/fonts/Pierson-Light.ttf') format('truetype');
 }

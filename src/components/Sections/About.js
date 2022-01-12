@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '../UI/Button';
+import Hello from '../UI/Hello';
 import eucalyptus from '../../assets/graphics/eucalyptus.png';
 import whitney from '../../assets/whit-profile-new.jpg';
 import branch from '../../assets/graphics/branch.svg';
@@ -8,6 +10,8 @@ const About = () => {
 	return (
 		<section className={styles.about}>
 			<div className={styles.container}>
+				{/* Adding CSS Scroll Animation Tutorial from https://alvarotrigo.com/blog/css-animations-scroll/ */}
+				<Hello text={"Hi I'm whitney!"} />
 				<div className=''>
 					<div className={styles.decorDiv1}>
 						<img className={styles.decorImg1} src={eucalyptus} alt='' />
@@ -45,15 +49,7 @@ const About = () => {
 						photographer. So if that interests you, you're in the right spot!
 					</p>
 					<div className={styles.inquire}>
-						<button className={styles.inquireButton}>
-							<a
-								target='_blank'
-								rel='noreferrer'
-								href='https://www.honeybook.com/widget/w_bilbao_media_llc_170936/cf_id/5fda3e235ff8e50a0f01364c'
-							>
-								Inquire here!
-							</a>
-						</button>
+						<Button text='Inquire here' />
 					</div>
 				</div>
 			</div>

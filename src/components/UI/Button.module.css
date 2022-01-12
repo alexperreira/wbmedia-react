@@ -1,0 +1,13 @@
+button.inquireButton {
+	background-color: #993c20;
+	padding: 15px 25px;
+	border: none;
+	border-radius: 5px;
+}
+
+button.inquireButton a {
+	color: #fff;
+	font-size: 1.25rem;
+	margin: auto;
+	padding: 0.625rem;
+}
