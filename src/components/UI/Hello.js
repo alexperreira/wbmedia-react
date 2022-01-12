@@ -1,25 +1,62 @@
-import React from 'react';
-import styles from './Hello.module.css';
+import React, { useLayoutEffect, useRef, useState } from 'react';
+// import ReactDOM from 'react-dom';
+import classes from './Hello.module.css';
+import styled from 'styled-components';
 
 const Hello = (props) => {
-	const reveal = () => {
-		const reveals = document.querySelectorAll('.reveal');
-		for (var i = 0; i < reveals.length; i++) {
-			var windowHeight = window.innerHeight;
-			var elementTop = reveals[i].getBoundingClientRect().top;
-			var elementVisible = 150;
-		}
-		if (elementTop < windowHeight - elementVisible) {
-			reveals[i].classList.add('active');
-		} else {
-			reveals[i].classList.remove('active');
-		}
-	};
+	const [show, doShow] = useState({ item: false });
+	const [percentShown, setPercentShown] = useState({ item: 0 });
+	const itemRef = useRef(null);
+
+	useLayoutEffect(() => {
+		const topPosition = (element) => element.getBoundingClientRect().top;
+		const getHeight = (element) => element.offsetHeight;
+		const itemPosition = topPosition(itemRef.current);
+
+		const itemHeight = getHeight(itemRef.current);
+
+		const onScroll = () => {
+			const scrollPosition = window.scrollY + window.innerHeight;
+
+			if (itemPosition < scrollPosition) {
+				// Element scrolled to
+				doShow((state) => ({ ...state, item: true }));
+
+				let itemPercent = ((scrollPosition - itemPosition) * 100) / itemHeight;
+				if (itemPercent > 100) itemPercent = 100;
+				if (itemPercent < 0) itemPercent = 0;
+
+				setPercentShown((prevState) => ({
+					...prevState,
+					item: itemPercent,
+				}));
+			} else if (itemPosition > scrollPosition) {
+				// Element scrolled away (up)
+				doShow((state) => ({ ...state, item: false }));
+			}
+		};
+
+		window.addEventListener('scroll', onScroll);
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
+
 	return (
-		<div className={`${styles.helloDiv} ${styles.active}`}>
+		<Div
+			animate={show.item}
+			animatePercent={percentShown.item}
+			ref={itemRef}
+			className={classes.helloDiv}
+		>
 			<h2>{props.text}</h2>
-		</div>
+		</Div>
 	);
 };
+
+const Div = styled.div`
+	transform: translateX(${({ animate }) => (animate ? '0' : '100vw')});
+	transition: transform 1s;
+	opacity: ${({ animatePercent }) =>
+		animatePercent ? `${animatePercent / 100}` : `1`};
+`;
 
 export default Hello;

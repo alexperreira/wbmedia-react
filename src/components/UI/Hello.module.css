@@ -1,6 +1,6 @@
 .helloDiv {
 	position: absolute;
-	top: 0;
+	top: 190vh;
 	left: 0;
 	font-size: 7rem;
 	padding: 0;
@@ -8,12 +8,12 @@
 	color: #ded5cc;
 	font-family: 'Raleway';
 	text-transform: uppercase;
-	transform: translateX(5rem);
-	opacity: 0;
-	transition: 2s all ease;
+	/* transform: translateX(5rem); */
+	/* opacity: 0; */
+	/* transition: 2s all ease; */
 }
 
-.reveal.active {
+.helloDiv.active {
 	transform: translateX(0);
 	opacity: 1;
 }

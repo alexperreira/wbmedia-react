@@ -7,10 +7,10 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Pages/Home';
 import Packages from './components/Pages/Packages';
 import FAQ from './components/Pages/FAQ';
-import PackageDetail from './components/Pages/PackageDetail';
 
 // Import Components
 import Header from './components/Sections/Header';
+import Footer from './components/Sections/Footer';
 import ScrollToTop from './components/UI/ScrollToTop';
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
 					<Route path='faq' element={<FAQ />} />
 				</Routes>
 			</ScrollToTop>
+			<Footer />
 			{/* <Button onClick={() => {
 				useNavigate(-1)
 			}} /> */}

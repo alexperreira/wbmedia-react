@@ -1,0 +1,44 @@
+.container {
+	/* position: fixed; */
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 40vh;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ded5cc;
+	z-index: 100;
+}
+
+.logo {
+	width: 50rem;
+	height: auto;
+}
+
+.navList {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navLink,
+ul,
+a {
+	list-style-type: none;
+	text-decoration: none;
+	color: #993c20;
+	font-size: 1.1rem;
+}
+
+li {
+	padding: 1.2rem;
+	margin: 1.2;
+}
+
+.socialIcons {
+	width: 3.5rem;
+	margin: 2rem;
+}
+
+.myLink {
+	padding-left: 0.1rem;
+}

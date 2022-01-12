@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../UI/Button';
+import Footer from '../Footer';
 import styles from './Seniors.module.css';
 import classes from './AllPackages.module.css';
 
@@ -43,12 +44,13 @@ const Seniors = () => {
 					</ul>
 				</div>
 			</div>
-			<div className={classes.banner}>
+			<div className={styles.banner}>
 				<div className={classes.overlay}>
 					<h4 className={classes.tagline}>Ready to book with me?</h4>
 					<Button text='Inquire here' />
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };
