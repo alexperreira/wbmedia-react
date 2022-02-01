@@ -1,5 +1,5 @@
 .page {
-	height: 200vh;
+	/* height: 200vh; */
 }
 
 .packagesHero {
@@ -18,13 +18,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 70vh;
+	height: 40rem;
 }
 
-.image {
+/* .image {
 	width: 20rem;
 	margin: 4rem;
-}
+} */
 
 .package {
 	height: 25rem;
@@ -57,7 +57,7 @@
 
 .banner {
 	width: 100vw;
-	height: 30vh;
+	height: 30rem;
 	background: url('https://images.unsplash.com/photo-1641664638369-f77f0ca24cbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80');
 	background-position: top left;
 	background-repeat: no-repeat;
@@ -77,8 +77,8 @@
 .overlay {
 	color: #fff;
 	background: rgba(0, 0, 0, 0.2);
-	height: 30vh;
-	width: 100vw;
+	height: 25rem;
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	display: flex;
@@ -95,4 +95,10 @@
 	letter-spacing: 0.5rem;
 	text-shadow: 1px 1px #fff;
 	margin: 4rem;
+}
+
+.faq {
+	font-family: 'Pierson Light';
+	font-weight: 400;
+	font-size: 5rem;
 }
