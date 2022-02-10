@@ -1,22 +1,23 @@
 import React from 'react';
-import Button from '../UI/Button';
-import ImageSlider from '../UI/Slider/ImageSlider';
-import styles from './Couples.module.css';
+import Button from '../../UI/Button';
+import Footer from '../Footer';
+import styles from './Families.module.css';
 import classes from './AllPackages.module.css';
 import { CouplesSliderData } from '../UI/Slider/SliderData';
+import ImageSlider from '../UI/Slider/ImageSlider';
 
-const Couples = () => {
+const Families = () => {
 	return (
-		<div className={`${classes.page} ${styles.pageBG}`}>
-			<div className={`${styles.couples} ${classes.packagesHero}`} />
+		<div className={styles.pageBG}>
+			<div className={`${styles.families} ${classes.packagesHero}`} />
 
 			<div className={classes.container}>
 				<div className={classes.package}>
 					<h3 className={classes.title}>Package 1</h3>
-					<h2 className={classes.price}>$250</h2>
+					<h2 className={classes.price}>$200</h2>
 					<ul>
-						<li>1 hr session</li>
-						<li>30-40 edited photos</li>
+						<li>30-40 minute session</li>
+						<li>20-35 edited photos</li>
 						<li>1 outfit</li>
 						<li>1 location</li>
 						<li>Print release and online gallery</li>
@@ -24,18 +25,19 @@ const Couples = () => {
 				</div>
 				<div className={classes.package}>
 					<h3 className={classes.title}>Package 2</h3>
-					<h2 className={classes.price}>$350</h2>
+					<h2 className={classes.price}>$375</h2>
 					<ul>
-						<li>1 1/2 hour session</li>
-						<li>50-60 edited photos</li>
-						<li>2 outfits</li>
-						<li>2 locations</li>
+						<li>60-90 minute session</li>
+						<li>50-100 edited photos</li>
+						{/* <li>Individuals of all of the kids, parents, group shots, etc!</li> */}
+						<li>1 outfit</li>
+						<li>1 location</li>
 						<li>Print release and online gallery</li>
 					</ul>
 				</div>
-				<div className={classes.package}>
+				{/* <div className={classes.package}>
 					<h3 className={classes.title}>Package 3</h3>
-					<h2 className={classes.price}>$500</h2>
+					<h2 className={classes.price}>$500.00</h2>
 					<ul>
 						<li>2 hour session</li>
 						<li>100+ edited photos</li>
@@ -43,7 +45,7 @@ const Couples = () => {
 						<li>As many locations as we can squeeze in!**</li>
 						<li>Print release and online gallery</li>
 					</ul>
-				</div>
+				</div> */}
 			</div>
 			<div className={styles.banner}>
 				<div className={classes.overlay}>
@@ -54,8 +56,40 @@ const Couples = () => {
 			<div>
 				<ImageSlider slides={CouplesSliderData} />
 			</div>
-
 			{/* <div
+				className={classes.addonsSectionContainer}
+				style={{ backgroundColor: '#fff' }}
+			>
+				<h2 className={classes.title} style={{ fontSize: '10rem' }}>
+					a small message to
+				</h2>
+				<h2 className={classes.addonsTitle}>Mom & Dad</h2>
+				<div className={classes.addonContainer}>
+					<p className={classes.addonText}>
+						Some families really look forward to taking pictures, &amp; some
+						families really ... don't! And both are fine!
+						<br />
+						<br />
+						As long as you're making memories and documenting them, that's all
+						that matters.
+						<br />
+						<br />
+						If you need some liquid courage to get you through, be my guest!
+						<br />
+						<br />
+						If you need some help with outfits, feel free to text me!
+						<br />
+						<br />
+						I try and bring kids under 12 a treat.
+						<br />
+						(sucker, bubbles, etc.)
+						<br />
+						<br />
+						So please let me know if you have some favorites!
+					</p>
+				</div>
+			</div>
+			<div
 				className={classes.addonsSectionContainer}
 				style={{ backgroundColor: '#fff' }}
 			>
@@ -127,53 +161,66 @@ const Couples = () => {
 				</div>
 			</div>
 			<div className={classes.addonsSectionContainer}>
+				<h2 className={classes.addonTitle}>FAQs:</h2>
+				<hr className={classes.thin} />
 				<div className={classes.addonContainer}>
-					<h3 className={classes.addonsTitle}>FAQs:</h3>
-					<hr className={classes.thin} />
 					<p className={classes.addonText}>
-						Q: What the heck do we wear?!
+						Q: How many families have you taken photos of?
 						<br />
 						<br />
-						A: Always, always wear something that makes you feel comfortable. We
-						will be sitting, lifting, and frolicking! If you need any help, I
-						can always help you put together a vision board with specific color
-						pallets depending on location + time of year.
+						A: A rough guess would have to be 100 or more?! Feel free to ask for
+						previous work or check out my instagram!
 						<hr className={classes.thin} />
+						Q: Will we get the print release to our photos after your session?
+						or do you do prints?
+						<br />
+						<br />
+						A: I do not handle prints. :)
+						<br />
+						In your contract you will get a full print release that will allow
+						you to take your images to your preferred print store.
+						<br />
+						(Or Costco, Walmart, Shutterfly, etc.)
+						<br />
+						You can also order them from the gallery that I deliver on, but I do
+						not get any compensation from that!
+					</p>
+				</div>
+			</div>
+			<div className={classes.addonsSectionContainer}>
+				<h2 className={classes.addonsTitle}>FAQs:</h2>
+				<hr className={classes.thin} />
+				<div className={classes.addonContainer}>
+					<p className={classes.addonText}>
 						Q: will you photoshop my images to hide any unwanted spots,
 						wrinkles, etc?
 						<br />
 						<br />
 						A: Minor edits will be made to all of your images, such as blemish
-						removal and smoothing of skin. You're fabulous always though!
+						removal and smoothing of skin.
 						<br />
-						<br />
+						You're fabulous always though!
+						<hr className={classes.thin} />
 						Q: What is your turn-around time?
 						<br />
 						<br />
 						A: 3 weeks to perfect your shoot! :)
 						<br />
-						No need to text and ask for updates, I will lwet you know when they
+						No need to text and ask for updates, I will let you know when they
 						are ready, email &amp; text them to you!
-						<br />
-						<br />
-						Q: What is your turn-around time?
-						<br />
-						<br />
-						A: Weddings take 4-6 weeks for me to perfect!
-						<br />
-						<br />
+						<hr className={classes.thin} />
 						Q: Do you give out only edited images?
 						<br />
 						<br />
-						A: Yes, yes, yes. I never give out RAW images. I hope that you've
-						hired me based off of our connection + my style, but you will get
-						all of the images that mean the most!
+						A: I never EVER give out RAW images. I hope that you've hired me
+						based off of our connection + my style, but you will get all of the
+						images that are the most flattering, in focus, &amp; the best
+						representation of you!
 					</p>
 				</div>
-			</div>
-			<Footer /> */}
+			</div> */}
 		</div>
 	);
 };
 
-export default Couples;
+export default Families;

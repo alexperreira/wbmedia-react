@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from '../UI/Button';
-import Footer from '../Sections/Footer';
 import styles from './Seniors.module.css';
 import classes from './AllPackages.module.css';
+import ImageSlider from '../UI/Slider/ImageSlider';
+import { SeniorsSliderData } from '../UI/Slider/SliderData';
 
 const Seniors = () => {
 	return (
@@ -50,7 +51,7 @@ const Seniors = () => {
 					<Button text='Inquire here' />
 				</div>
 			</div>
-			<div
+			{/* <div
 				className={classes.addonsSectionContainer}
 				style={{ backgroundColor: '#fff' }}
 			>
@@ -191,8 +192,10 @@ const Seniors = () => {
 						</p>
 					</div>
 				</div>
+			</div> */}
+			<div>
+				<ImageSlider slides={SeniorsSliderData} />
 			</div>
-			<Footer />
 		</div>
 	);
 };

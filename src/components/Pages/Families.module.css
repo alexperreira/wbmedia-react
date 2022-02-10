@@ -1,5 +1,5 @@
-.couples {
-	background: url('/src/assets/images/couples-tailgate.jpg');
+.families {
+	background: url('/src/assets/images/family-main.jpg');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 	width: 100%;
 	height: 25rem;
 	position: relative;
-	background: url('/src/assets/images/couples-traindepot.jpg');
+	background: url('/src/assets/images/whit-austin-woods.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from '../UI/Button';
-import Footer from '../Sections/Footer';
+import ImageSlider from '../UI/Slider/ImageSlider';
 import styles from './Weddings.module.css';
 import classes from './AllPackages.module.css';
+import { CouplesSliderData } from '../UI/Slider/SliderData';
 
 const Weddings = () => {
 	return (
@@ -60,7 +61,10 @@ const Weddings = () => {
 					<Button text='Inquire here' />
 				</div>
 			</div>
-			<div className={classes.addonsSectionContainer}>
+			<div>
+				<ImageSlider slides={CouplesSliderData} />
+			</div>
+			{/* <div className={classes.addonsSectionContainer}>
 				<h3 className={classes.addonsTitle}>Add-Ons</h3>
 				<hr className={classes.thin} />
 				<h4 className={classes.addon}>Second Shooter</h4>
@@ -217,7 +221,7 @@ const Weddings = () => {
 					</p>
 				</div>
 			</div>
-			<Footer />
+			<Footer /> */}
 		</div>
 	);
 };
