@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../../UI/Button';
-import Footer from '../Footer';
+import Button from '../UI/Button';
+import Footer from '../Sections/Footer';
 import styles from './Weddings.module.css';
 import classes from './AllPackages.module.css';
 

@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 import logo from '../../assets/WB-Submark-CMYK.png';
+import Dropdown from '../UI/Dropdown';
 
 const Header = () => {
+	const [dropdown, setDropdown] = useState(false);
+
+	const onMouseEnter = () => {
+		if (window.innerWidth < 960) {
+			setDropdown(false);
+		} else {
+			setDropdown(true);
+		}
+	};
+
+	const onMouseLeave = () => {
+		if (window.innerWidth < 960) {
+			setDropdown(false);
+		} else {
+			setDropdown(false);
+		}
+	};
+
 	return (
 		<React.Fragment>
 			<header className={styles.navContainer}>
@@ -16,10 +35,11 @@ const Header = () => {
 								Home
 							</Link>
 						</li>
-						<li>
+						<li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
 							<Link to='/packages' className={styles.navLink}>
 								Packages
 							</Link>
+							{dropdown && <Dropdown />}
 						</li>
 						<li>
 							<Link to='/faq' className={styles.navLink}>

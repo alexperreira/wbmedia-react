@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
-import logo from '../../assets/WB-Logo-fullcolor-CMYK.png';
+import logo from '../../assets/WB-Logo-White.png';
 import instagram from '../../assets/graphics/instagram-icon.png';
 import facebook from '../../assets/graphics/facebook-icon.png';
 

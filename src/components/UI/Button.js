@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 
 const Button = (props) => {
 	return (
-		<button className={styles.inquireButton}>
+		<button className={styles.inquireButton} >
 			<a
 				target='_blank'
 				rel='noreferrer'

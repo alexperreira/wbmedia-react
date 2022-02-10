@@ -34,7 +34,7 @@ ul,
 a {
 	list-style-type: none;
 	text-decoration: none;
-	color: #993c20;
+	/* color: #993c20; */
 	font-size: 1.1rem;
 }
 

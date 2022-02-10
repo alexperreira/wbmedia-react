@@ -11,3 +11,7 @@ button.inquireButton a {
 	margin: auto;
 	padding: 0.625rem;
 }
+
+button:hover {
+	transform: scale(1.1);
+}
