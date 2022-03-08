@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../UI/Button';
+import Hello from '../UI/Hello';
 import ImageSlider from '../UI/Slider/ImageSlider';
 import styles from './Weddings.module.css';
 import classes from './AllPackages.module.css';
@@ -9,8 +10,8 @@ const Weddings = () => {
 	return (
 		<div className={`${classes.page} ${styles.pageBG}`}>
 			<div className={`${styles.weddings} ${classes.packagesHero}`} />
-
 			<div className={classes.container}>
+				<Hello text={'Weddings'} />
 				<div className={classes.package}>
 					<h3 className={classes.title}>Package 1</h3>
 					<h2 className={classes.price}>$1,700</h2>

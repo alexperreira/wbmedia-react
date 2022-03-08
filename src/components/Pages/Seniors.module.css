@@ -3,6 +3,7 @@
 } */
 
 .seniors {
+	padding-top: 100px;
 	background: url('/src/assets/images/senior-paddle-shore.jpg');
 	background-position: center center;
 	background-size: cover;

@@ -31,9 +31,9 @@
 }
 
 .containerImage {
-	background: url('/src/assets/hero-image/main.jpg');
+	background: url('/src/assets/images/whit-austin-woods-1.jpg');
 	background-size: 100vw auto;
-	background-position: center;
+	background-position: center 60%;
 	background-attachment: fixed;
 	top: 100vh;
 }
@@ -78,9 +78,9 @@
 
 .containerSolid .titleWrapper h1,
 .containerSolid .titleWrapper h5 {
-	background: url('/src/assets/hero-image/main.jpg');
-	background-size: cover;
-	background-position: center;
+	background: url('/src/assets/images/whit-austin-woods-1.jpg');
+	background-size: 100vw auto;
+	background-position: center 56%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

@@ -1,3 +1,7 @@
+.page {
+	padding-top: 100px;
+}
+
 .packages {
 	/* height: 100vh; */
 	/* margin-left: auto; */
@@ -21,11 +25,6 @@
 	color: #aa480b;
 	font-weight: 400;
 }
-
-/* .alignCenter {
-	align-items: center;
-	background: black;
-} */
 
 .card {
 	background: white;

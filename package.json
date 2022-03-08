@@ -1,7 +1,6 @@
 {
-	"name": "test-react",
+	"name": "wb-media",
 	"version": "0.1.0",
-	"private": true,
 	"dependencies": {
 		"@react-spring/parallax": "^9.4.0",
 		"@react-spring/web": "^9.4.0",

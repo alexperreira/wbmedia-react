@@ -5,8 +5,8 @@ import { Route, Routes } from 'react-router-dom';
 
 // Import Pages
 import Home from './components/Pages/Home';
-import Packages from './components/Pages/Packages';
-// import FAQ from './components/Pages/FAQ';
+// import Packages from './components/Pages/Packages';
+import FAQ from './components/Pages/FAQ';
 
 // Import Components
 import Header from './components/Sections/Header';
@@ -24,12 +24,12 @@ function App() {
 			<ScrollToTop>
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='packages' element={<Packages />} />
+					{/* <Route path='packages' element={<Packages />} /> */}
 					<Route path='/packages/seniors' element={<Seniors />} />
 					<Route path='/packages/weddings' element={<Weddings />} />
 					<Route path='/packages/couples' element={<Couples />} />
 					<Route path='/packages/families' element={<Families />} />
-					{/* <Route path='faq' element={<FAQ />} /> */}
+					<Route path='faq' element={<FAQ />} />
 				</Routes>
 			</ScrollToTop>
 			<Footer />

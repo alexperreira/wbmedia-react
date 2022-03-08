@@ -1,5 +1,6 @@
 .weddings {
-	background: url('/src/assets/images/wedding-detail.jpg');
+	padding-top: 100px;
+	background: url('/src/assets/images/whit-web/weddings/weddings-main.jpg');
 	background-position: center 75%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -9,7 +10,7 @@
 	position: relative;
 	width: 100%;
 	height: 25rem;
-	background: url('/src/assets/images/wedding-detail.jpg');
+	background: url('/src/assets/images/whit-web/weddings/weddings-flowers.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -1,5 +1,6 @@
 .couples {
-	background: url('/src/assets/images/couples-tailgate.jpg');
+	padding-top: 100px;
+	background: url('/src/assets/images/whit-web/couples/couples-main.jpg');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;

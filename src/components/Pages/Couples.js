@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../UI/Button';
+import Hello from '../UI/Hello';
 import ImageSlider from '../UI/Slider/ImageSlider';
 import styles from './Couples.module.css';
 import classes from './AllPackages.module.css';
@@ -8,6 +9,7 @@ import { CouplesSliderData } from '../UI/Slider/SliderData';
 const Couples = () => {
 	return (
 		<div className={`${classes.page} ${styles.pageBG}`}>
+			<Hello text={'Couples'} />
 			<div className={`${styles.couples} ${classes.packagesHero}`} />
 
 			<div className={classes.container}>

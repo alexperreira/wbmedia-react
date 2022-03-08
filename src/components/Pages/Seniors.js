@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../UI/Button';
+import Hello from '../UI/Hello';
 import styles from './Seniors.module.css';
 import classes from './AllPackages.module.css';
 import ImageSlider from '../UI/Slider/ImageSlider';
@@ -11,6 +12,7 @@ const Seniors = () => {
 			<div className={`${styles.seniors} ${classes.packagesHero}`} />
 
 			<div className={classes.container}>
+				<Hello text={'Seniors'} />
 				<div className={classes.package}>
 					<h3 className={classes.title}>Package 1</h3>
 					<h2 className={classes.price}>$250</h2>
