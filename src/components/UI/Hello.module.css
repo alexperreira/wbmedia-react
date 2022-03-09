@@ -1,19 +1,11 @@
 .helloDiv {
 	position: absolute;
-	top: 190vh;
-	left: 0;
-	font-size: 7rem;
+	top: -200px;
+	left: 20px;
+	font-size: 6rem;
 	padding: 0;
 	margin: 0;
 	color: #ded5cc;
 	font-family: 'Raleway';
 	text-transform: uppercase;
-	/* transform: translateX(5rem); */
-	/* opacity: 0; */
-	/* transition: 2s all ease; */
-}
-
-.helloDiv.active {
-	transform: translateX(0);
-	opacity: 1;
 }

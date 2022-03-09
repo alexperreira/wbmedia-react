@@ -3,20 +3,23 @@ import Button from '../UI/Button';
 import Hello from '../UI/Hello';
 import eucalyptus from '../../assets/graphics/eucalyptus.png';
 import whitney from '../../assets/whit-profile-new.jpg';
+import whitney2 from '../../assets/whit-headshot.jpg';
 import branch from '../../assets/graphics/branch.svg';
 import styles from './About.module.css';
 
 const About = () => {
+	// Testing code for button scroller
 	return (
-		<section className={styles.about}>
+		<section className={styles.about} id='#about'>
+			<Hello text={"Hi I'm whitney!"} />
 			<div className={styles.container}>
 				{/* Adding CSS Scroll Animation Tutorial from https://alvarotrigo.com/blog/css-animations-scroll/ */}
-				<Hello text={"Hi I'm whitney!"} />
-				<div className=''>
+				<div className={styles.profile}>
 					<div className={styles.decorDiv1}>
 						<img className={styles.decorImg1} src={eucalyptus} alt='' />
 					</div>
 					<img src={whitney} className={styles.whitneyProfile1} alt='' />
+					<img src={whitney2} className={styles.whitneyProfile2} alt='' />
 					<div className={styles.decorDiv2}>
 						<img src={branch} className={styles.decorImg2} alt='' />
 					</div>

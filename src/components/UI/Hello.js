@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
-// import ReactDOM from 'react-dom';
 import classes from './Hello.module.css';
 import styled from 'styled-components';
 

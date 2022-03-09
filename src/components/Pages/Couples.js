@@ -9,10 +9,10 @@ import { CouplesSliderData } from '../UI/Slider/SliderData';
 const Couples = () => {
 	return (
 		<div className={`${classes.page} ${styles.pageBG}`}>
-			<Hello text={'Couples'} />
 			<div className={`${styles.couples} ${classes.packagesHero}`} />
 
 			<div className={classes.container}>
+				<Hello text={'Couples'} />
 				<div className={classes.package}>
 					<h3 className={classes.title}>Package 1</h3>
 					<h2 className={classes.price}>$250</h2>

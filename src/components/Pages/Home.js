@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Sections/Hero';
 import About from '../Sections/About';
 import Banner from '../Sections/Banner';
+import InstaFeed from '../UI/Instagram/InstaFeed';
 
 function Home() {
 	return (
@@ -9,6 +10,7 @@ function Home() {
 			<Hero />
 			<About />
 			<Banner />
+			<InstaFeed />
 		</div>
 	);
 }

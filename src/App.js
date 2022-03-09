@@ -15,7 +15,7 @@ import ScrollToTop from './components/UI/ScrollToTop';
 import Seniors from './components/Pages/Seniors';
 import Weddings from './components/Pages/Weddings';
 import Couples from './components/Pages/Couples';
-import Families from './components/Sections/Options/Families';
+import Families from './components/Pages/Families';
 
 function App() {
 	return (
@@ -24,7 +24,6 @@ function App() {
 			<ScrollToTop>
 				<Routes>
 					<Route path='/' element={<Home />} />
-					{/* <Route path='packages' element={<Packages />} /> */}
 					<Route path='/packages/seniors' element={<Seniors />} />
 					<Route path='/packages/weddings' element={<Weddings />} />
 					<Route path='/packages/couples' element={<Couples />} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../UI/Button';
+import Button from '../UI/Button';
 import Hello from '../UI/Hello';
 import styles from './Families.module.css';
 import classes from './AllPackages.module.css';
@@ -13,21 +13,15 @@ const Families = () => {
 
 			<div className={classes.container}>
 				<Hello text={'Families'} />
-				<div className={classes.package}>
-					{/* <h3 className={classes.title}>Package 1</h3> */}
-					<h2 className={classes.price}>$200</h2>
+				<div
+					className={classes.package}
+					style={{ width: '100%', maxWidth: '600px' }}
+				>
+					<h2 className={classes.price} style={{ textAlign: 'center' }}>
+						Packages range from $200 to $400. Please inquire and let me know the
+						number of family members and ages.
+					</h2>
 				</div>
-				{/* <div className={classes.package}>
-					<h3 className={classes.title}>Package 3</h3>
-					<h2 className={classes.price}>$500.00</h2>
-					<ul>
-						<li>2 hour session</li>
-						<li>100+ edited photos</li>
-						<li>3 outfits</li>
-						<li>As many locations as we can squeeze in!**</li>
-						<li>Print release and online gallery</li>
-					</ul>
-				</div> */}
 			</div>
 			<div className={styles.banner}>
 				<div className={classes.overlay}>
