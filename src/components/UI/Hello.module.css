@@ -2,10 +2,19 @@
 	position: absolute;
 	top: -200px;
 	left: 20px;
-	font-size: 6rem;
+	font-size: 5.5rem;
 	padding: 0;
 	margin: 0;
 	color: #ded5cc;
 	font-family: 'Raleway';
 	text-transform: uppercase;
+	z-index: 1000;
 }
+
+@media screen and (max-width: 1200px) {
+	.helloDiv {
+		font-size: 4.5rem;
+	}
+}
+
+@media screen and (max-width: )

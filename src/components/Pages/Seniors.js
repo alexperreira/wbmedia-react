@@ -5,7 +5,6 @@ import styles from './Seniors.module.css';
 import classes from './AllPackages.module.css';
 import ImageSlider from '../UI/Slider/ImageSlider';
 import { SeniorsSliderData } from '../UI/Slider/SliderData';
-import InstaFeed from '../UI/Instagram/InstaFeed';
 
 const Seniors = () => {
 	return (
@@ -54,7 +53,6 @@ const Seniors = () => {
 					<Button text='Inquire here' />
 				</div>
 			</div>
-			<InstaFeed />
 			<div>
 				<ImageSlider slides={SeniorsSliderData} />
 			</div>

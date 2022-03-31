@@ -9,19 +9,21 @@ const Header = () => {
 	const [dropdown, setDropdown] = useState(false);
 
 	const onMouseEnter = () => {
-		if (window.innerWidth < 960) {
-			setDropdown(false);
-		} else {
-			setDropdown(true);
-		}
+		// if (window.innerWidth < 960) {
+		// 	setDropdown(false);
+		// } else {
+		// 	setDropdown(true);
+		// }
+		setDropdown(true);
 	};
 
 	const onMouseLeave = () => {
-		if (window.innerWidth < 960) {
-			setDropdown(false);
-		} else {
-			setDropdown(false);
-		}
+		// if (window.innerWidth < 960) {
+		// 	setDropdown(false);
+		// } else {
+		// 	setDropdown(false);
+		// }
+		setDropdown(false);
 	};
 
 	return (
@@ -36,7 +38,7 @@ const Header = () => {
 							</Link>
 						</li>
 						<li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-							<Link to='/packages' className={styles.navLink}>
+							<Link to='#' className={styles.navLink}>
 								Packages
 							</Link>
 							{dropdown && <Dropdown />}
