@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import scrollButton from '../../assets/graphics/camera-icon-2.png';
 // import About from './About';
 import styles from './Hero.module.css';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const Hero = () => {
 	// const aboutEl = document.getElementById('about');
@@ -27,12 +27,13 @@ const Hero = () => {
 						offset={-200}
 						duration={5000}
 					>
-						<img
+						<IoIosArrowDown className={styles.scrollButton} />
+						{/* <img
 							// onClick={scrollTo}
 							src={scrollButton}
 							className={styles.scrollButton}
 							alt=''
-						/>
+						/> */}
 					</Link>
 				</div>
 

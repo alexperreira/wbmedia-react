@@ -1,6 +1,6 @@
 .helloDiv {
 	position: absolute;
-	top: -200px;
+	top: -50px;
 	left: 20px;
 	font-size: 5.5rem;
 	padding: 0;
@@ -11,10 +11,14 @@
 	z-index: 1000;
 }
 
+.helloDiv h2 {
+	margin: 0;
+}
+
 @media screen and (max-width: 1200px) {
 	.helloDiv {
 		font-size: 4.5rem;
 	}
 }
 
-@media screen and (max-width: )
+@media screen and (max-width: );
