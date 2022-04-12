@@ -24,8 +24,8 @@ const Hero = () => {
 						to='#about'
 						spy={true}
 						smooth={true}
-						offset={-200}
-						duration={5000}
+						offset={-100}
+						duration={3000}
 					>
 						<IoIosArrowDown className={styles.scrollButton} />
 						{/* <img

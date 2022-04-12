@@ -22,7 +22,7 @@ section.banner {
 	background-image: url('/src/assets/images/hand-of-god.jpg');
 	height: 50%;
 	width: 100%;
-	background-position: bottom center;
+	background-position: 25% center;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

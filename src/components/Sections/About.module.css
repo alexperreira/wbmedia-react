@@ -23,20 +23,20 @@ div.profile {
 img.whitneyProfile1 {
 	position: relative;
 	transform: translate(-50px, -50px);
-	width: 30rem;
+	width: 25rem;
 	z-index: 10;
 	border: 10px solid #a79d8e;
-	padding: 20px;
+	padding: 1rem;
 }
 
 img.whitneyProfile2 {
 	position: absolute;
-	bottom: 0;
-	left: 50px;
-	width: 30rem;
+	bottom: 6rem;
+	left: 6.2rem;
+	width: 20rem;
 	border: 10px solid #a79d8e;
 	z-index: 10;
-	padding: 20px;
+	padding: 0.8rem;
 }
 
 div.decorDiv1 {
@@ -50,14 +50,16 @@ div.decorDiv2 {
 }
 
 img.decorImg1 {
+	position: absolute;
 	width: 400px;
-	transform: translate(160px, -140px);
+	transform: translate(180px, -180px);
 	z-index: 0;
 }
 
 img.decorImg2 {
+	position: absolute;
 	width: 400px;
-	transform: scale(1.5) translate(-180px, -180px) rotate(180deg);
+	transform: scale(1.5) translate(-200px, -180px) rotate(180deg);
 }
 
 div.aboutText {
@@ -69,7 +71,7 @@ div.aboutText > p {
 	color: #715845;
 	/* width: 100%; */
 	max-width: 600px;
-	line-height: 2em;
+	line-height: 1.8rem;
 	font-size: 1.125rem;
 }
 
