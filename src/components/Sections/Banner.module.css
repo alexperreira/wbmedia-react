@@ -19,13 +19,15 @@ section.banner {
 } */
 
 .imageDivider {
-	background-image: url('/src/assets/images/hand-of-god.jpg');
+	background-image: url('/src/assets/images/hand-of-god-cropped.jpg');
 	height: 50%;
 	width: 100%;
-	background-position: 25% center;
+	background-position: 100%;
 	background-size: cover;
-	background-attachment: fixed;
+	width: 100%;
+	background-attachment: local;
 	background-repeat: no-repeat;
+	object-fit: fill;
 	justify-content: center;
 }
 
