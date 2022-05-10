@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import MenuIcon from '../UI/Nav/MenuIcon';
 import logo from '../../assets/WB-Submark-CMYK.png';
 import Dropdown from '../UI/Dropdown';
 
@@ -33,6 +33,9 @@ const Nav = styled.nav`
 	& > ul {
 		display: flex;
 		align-items: center;
+	}
+	@media screen and (max-width: 481px) {
+		display: none;
 	}
 `;
 
@@ -69,6 +72,7 @@ const Navbar = () => {
 		<React.Fragment>
 			<NavContainer>
 				<Logo src={logo} />
+				<MenuIcon />
 				<Nav>
 					<ul>
 						<li>

@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './MenuIcon.module.css';
 
 const MenuIcon = () => {
+	const [isActive, setIsActive] = useState(false);
+
+	const handleToggle = () => {
+		setIsActive(!isActive);
+	};
 	return (
 		<>
 			<svg
-				className={`${styles.ham} ${styles.ham3}`}
+				// className={`${styles.ham} ${styles.ham3}`}
+				className={
+					isActive
+						? `${styles.active} ${styles.ham} ${styles.ham3}`
+						: `${styles.ham} ${styles.ham3}`
+				}
 				// 'ham ham3'
 				viewBox='0 0 100 100'
 				width='80'
-				onClick="this.classList.toggle('active')"
+				onClick={handleToggle}
 			>
 				<path
 					className={`${styles.line} ${styles.top}`}
