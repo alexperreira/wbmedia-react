@@ -1,29 +1,30 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Dropdown.module.css';
+import { menuItems } from '../../data/menuData';
 
-const menuItems = [
-	{
-		title: 'Seniors',
-		path: '/packages/seniors',
-		className: 'dropdownLink',
-	},
-	{
-		title: 'Weddings',
-		path: '/packages/weddings',
-		className: 'dropdownLink',
-	},
-	{
-		title: 'Couples',
-		path: '/packages/couples',
-		className: 'dropdownLink',
-	},
-	{
-		title: 'Families',
-		path: '/packages/families',
-		className: 'dropdownLink',
-	},
-];
+// const menuItems = [
+// 	{
+// 		title: 'Seniors',
+// 		path: '/packages/seniors',
+// 		className: 'dropdownLink',
+// 	},
+// 	{
+// 		title: 'Weddings',
+// 		path: '/packages/weddings',
+// 		className: 'dropdownLink',
+// 	},
+// 	{
+// 		title: 'Couples',
+// 		path: '/packages/couples',
+// 		className: 'dropdownLink',
+// 	},
+// 	{
+// 		title: 'Families',
+// 		path: '/packages/families',
+// 		className: 'dropdownLink',
+// 	},
+// ];
 
 const Dropdown = () => {
 	const [click, setClick] = useState(false);

@@ -1,11 +1,50 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Header.module.css';
+import styled from 'styled-components';
 
 import logo from '../../assets/WB-Submark-CMYK.png';
 import Dropdown from '../UI/Dropdown';
 
-const Header = () => {
+const NavContainer = styled.div`
+	position: sticky;
+	top: 0;
+	display: flex;
+	width: 100vw;
+	height: 100px;
+	max-width: 2000px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.9);
+	/* background: linear-gradient(to bottom, #fff 0%, #1c00ff00 100%); */
+	z-index: 100;
+`;
+
+const Logo = styled.img`
+	width: 4.5rem;
+	height: 4.5rem;
+	margin: auto 2.5rem;
+	cursor: pointer;
+`;
+
+const Nav = styled.nav`
+	display: flex;
+	margin-right: 2.5rem;
+
+	& > ul {
+		display: flex;
+		align-items: center;
+	}
+`;
+
+const NavLink = styled(Link)`
+	list-style: none;
+	text-decoration: none;
+	font-size: 1.1rem;
+	cursor: pointer;
+	padding: 1.2rem;
+`;
+
+const Navbar = () => {
 	const [dropdown, setDropdown] = useState(false);
 
 	const onMouseEnter = () => {
@@ -28,25 +67,19 @@ const Header = () => {
 
 	return (
 		<React.Fragment>
-			<header className={styles.navContainer}>
-				<img src={logo} alt='' className={styles.logo} />
-				<nav className={styles.headerNav}>
+			<NavContainer>
+				<Logo src={logo} />
+				<Nav>
 					<ul>
 						<li>
-							<Link to='/' className={styles.navLink}>
-								Home
-							</Link>
+							<NavLink to='/'>Home</NavLink>
 						</li>
 						<li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-							<Link to='#' className={styles.navLink}>
-								Packages
-							</Link>
+							<NavLink to='#'>Packages</NavLink>
 							{dropdown && <Dropdown />}
 						</li>
 						<li>
-							<Link to='/faq' className={styles.navLink}>
-								FAQ
-							</Link>
+							<NavLink to='/faq'>FAQ</NavLink>
 						</li>
 						<li>
 							<a
@@ -58,10 +91,10 @@ const Header = () => {
 							</a>
 						</li>
 					</ul>
-				</nav>
-			</header>
+				</Nav>
+			</NavContainer>
 		</React.Fragment>
 	);
 };
 
-export default Header;
+export default Navbar;

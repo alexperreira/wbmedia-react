@@ -9,7 +9,7 @@ import Home from './components/Pages/Home';
 import FAQ from './components/Pages/FAQ';
 
 // Import Components
-import Header from './components/Sections/Header';
+import Navbar from './components/Sections/Navbar';
 import Footer from './components/Sections/Footer';
 import ScrollToTop from './components/UI/ScrollToTop';
 import Seniors from './components/Pages/Seniors';
@@ -20,7 +20,7 @@ import Families from './components/Pages/Families';
 function App() {
 	return (
 		<React.Fragment>
-			<Header />
+			<Navbar />
 			<ScrollToTop>
 				<Routes>
 					<Route path='/' element={<Home />} />
