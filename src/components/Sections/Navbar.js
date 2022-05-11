@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import MenuIcon from '../UI/Nav/MenuIcon';
+// import MenuIcon from '../UI/Nav/MenuIcon';
 import logo from '../../assets/WB-Submark-CMYK.png';
 import Dropdown from '../UI/Dropdown';
 
@@ -24,6 +24,12 @@ const Logo = styled.img`
 	height: 4.5rem;
 	margin: auto 2.5rem;
 	cursor: pointer;
+
+	@media screen and (max-width: 481px) {
+		width: 4rem;
+		height: 4rem;
+		margin: auto 1.5rem;
+	}
 `;
 
 const Nav = styled.nav`
@@ -47,24 +53,14 @@ const NavLink = styled(Link)`
 	padding: 1.2rem;
 `;
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
 	const [dropdown, setDropdown] = useState(false);
 
 	const onMouseEnter = () => {
-		// if (window.innerWidth < 960) {
-		// 	setDropdown(false);
-		// } else {
-		// 	setDropdown(true);
-		// }
 		setDropdown(true);
 	};
 
 	const onMouseLeave = () => {
-		// if (window.innerWidth < 960) {
-		// 	setDropdown(false);
-		// } else {
-		// 	setDropdown(false);
-		// }
 		setDropdown(false);
 	};
 
@@ -72,7 +68,7 @@ const Navbar = () => {
 		<React.Fragment>
 			<NavContainer>
 				<Logo src={logo} />
-				<MenuIcon />
+				{/* <MenuIcon onClick={toggle} /> */}
 				<Nav>
 					<ul>
 						<li>
