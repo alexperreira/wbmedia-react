@@ -1,6 +1,44 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
-import classes from './Hello.module.css';
+// import classes from './Hello.module.css';
 import styled from 'styled-components';
+
+const Div = styled.div`
+	position: absolute;
+	top: -1em;
+	left: 1.5rem;
+	font-size: 5.5rem;
+	padding: 0;
+	margin: 0;
+	color: #ded5cc;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	z-index: 998;
+	transform: translateX(${({ animate }) => (animate ? '0' : '100vw')});
+	transition: transform 1s;
+	opacity: ${({ animatePercent }) =>
+		animatePercent ? `${animatePercent / 100}` : `1`};
+	& > h2 {
+		margin: 0;
+	}
+	@media screen and (max-width: 1200px) {
+		font-size: 4.5rem;
+	}
+
+	@media screen and (max-width: 1024px) {
+		font-size: 3.5rem;
+		margin-top: 10px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 2rem;
+		margin-top: 10px;
+	}
+`;
 
 const Hello = (props) => {
 	const [show, doShow] = useState({ item: false });
@@ -44,18 +82,11 @@ const Hello = (props) => {
 			animate={show.item}
 			animatePercent={percentShown.item}
 			ref={itemRef}
-			className={classes.helloDiv}
+			// className={classes.helloDiv}
 		>
 			<h2>{props.text}</h2>
 		</Div>
 	);
 };
-
-const Div = styled.div`
-	transform: translateX(${({ animate }) => (animate ? '0' : '100vw')});
-	transition: transform 1s;
-	opacity: ${({ animatePercent }) =>
-		animatePercent ? `${animatePercent / 100}` : `1`};
-`;
 
 export default Hello;

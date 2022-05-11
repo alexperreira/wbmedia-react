@@ -8,9 +8,9 @@
 	-ms-user-select: none;
 	user-select: none;
 	z-index: 1000;
-	position: absolute;
-	top: 1.2rem;
-	right: 1.5rem;
+	position: fixed;
+	top: 0.6rem;
+	right: 0.5rem;
 	background: transparent;
 	cursor: pointer;
 	outline: none;
@@ -24,9 +24,9 @@
 	stroke-width: 5.5;
 	stroke-linecap: round;
 	z-index: 1000;
-	position: absolute;
-	top: 1.2rem;
-	right: 1.5rem;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
 	background: transparent;
 	cursor: pointer;
 	outline: none;

@@ -6,7 +6,7 @@ import logo from '../../assets/WB-Submark-CMYK.png';
 import Dropdown from '../UI/Dropdown';
 
 const NavContainer = styled.div`
-	position: sticky;
+	position: fixed;
 	top: 0;
 	display: flex;
 	width: 100vw;
@@ -19,16 +19,22 @@ const NavContainer = styled.div`
 	z-index: 100;
 `;
 
+const LogoDiv = styled(Link)`
+	margin: auto 2.5rem;
+
+	@media screen and (max-width: 481px) {
+		margin: auto 1.5rem;
+	}
+`;
+
 const Logo = styled.img`
 	width: 4.5rem;
 	height: 4.5rem;
-	margin: auto 2.5rem;
 	cursor: pointer;
 
 	@media screen and (max-width: 481px) {
 		width: 4rem;
 		height: 4rem;
-		margin: auto 1.5rem;
 	}
 `;
 
@@ -67,7 +73,9 @@ const Navbar = ({ toggle }) => {
 	return (
 		<React.Fragment>
 			<NavContainer>
-				<Logo src={logo} />
+				<LogoDiv to='/'>
+					<Logo src={logo} />
+				</LogoDiv>
 				{/* <MenuIcon onClick={toggle} /> */}
 				<Nav>
 					<ul>

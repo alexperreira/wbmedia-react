@@ -27,11 +27,11 @@ export const menuData = [
 		path: '/',
 		className: 'dropdownLink',
 	},
-	{
-		title: 'Packages',
-		path: '#',
-		className: 'dropdownLink',
-	},
+	// {
+	// 	title: 'Packages',
+	// 	path: '#',
+	// 	className: 'dropdownLink',
+	// },
 	{
 		title: 'Seniors',
 		path: '/packages/seniors',
