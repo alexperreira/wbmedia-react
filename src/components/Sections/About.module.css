@@ -27,6 +27,7 @@ img.whitneyProfile1 {
 	z-index: 10;
 	border: 10px solid #a79d8e;
 	padding: 1rem;
+	/* max-width: 80%; */
 }
 
 img.whitneyProfile2 {
@@ -79,4 +80,35 @@ div.inquire {
 	margin: auto;
 	padding-top: 1.25rem;
 	text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+	section.about > div.container {
+		flex-direction: column;
+	}
+	div.aboutText {
+		margin: 0px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 481px) {
+	img.whitneyProfile1 {
+		width: 15rem;
+		padding: 10px;
+	}
+
+	img.whitneyProfile2 {
+		width: 13rem;
+		left: 5rem;
+		padding: 8px;
+	}
+
+	img.decorImg1 {
+		transform: scale(0.8) translate(60px, -180px);
+	}
+
+	div.aboutText {
+		max-width: 90%;
+	}
 }
