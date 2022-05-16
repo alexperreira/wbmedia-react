@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Banner.module.css';
+import styled from 'styled-components';
+
+const BannerSection = styled.section`
+	
+`
 
 function Banner() {
 	return (
