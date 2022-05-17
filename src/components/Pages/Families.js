@@ -1,34 +1,51 @@
 import React from 'react';
 import Button from '../UI/Button';
 import Hello from '../UI/Hello';
-import styles from './Families.module.css';
-import classes from './AllPackages.module.css';
+import styled from 'styled-components';
 import { CouplesSliderData } from '../UI/Slider/SliderData';
 import ImageSlider from '../UI/Slider/ImageSlider';
+import bannerImage from '../../assets/family-banner.jpg';
+import heroImage from '../../assets/images/family-main.jpg';
+import {
+	PackageHero,
+	Container,
+	Package,
+	Price,
+	Overlay,
+	BannerStyle,
+	Tagline,
+} from './Packages';
+
+const Banner = styled.div`
+	${BannerStyle}
+	background-image: url(${bannerImage});
+`;
+
+const Hero = styled.div`
+	${PackageHero}
+	background-image: url(${heroImage});
+`;
 
 const Families = () => {
 	return (
-		<div className={`${styles.pageBG} ${classes.page}`}>
-			<div className={`${styles.families} ${classes.packagesHero}`} />
+		<div>
+			<Hero />
 
-			<div className={classes.container}>
+			<Container>
 				<Hello text={'Families'} />
-				<div
-					className={classes.package}
-					style={{ width: '100%', maxWidth: '600px' }}
-				>
-					<h2 className={classes.price} style={{ textAlign: 'center' }}>
+				<Package style={{ width: '100%', maxWidth: '600px' }}>
+					<Price style={{ textAlign: 'center' }}>
 						Packages range from $200 to $400. Please inquire and let me know the
 						number of family members and ages.
-					</h2>
-				</div>
-			</div>
-			<div className={styles.banner}>
-				<div className={classes.overlay}>
-					<h4 className={classes.tagline}>Ready to book with me?</h4>
+					</Price>
+				</Package>
+			</Container>
+			<Banner>
+				<Overlay>
+					<Tagline>Ready to book with me?</Tagline>
 					<Button text='Inquire here' />
-				</div>
-			</div>
+				</Overlay>
+			</Banner>
 			<div>
 				<ImageSlider slides={CouplesSliderData} />
 			</div>

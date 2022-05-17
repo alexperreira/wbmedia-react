@@ -9,7 +9,7 @@
 	user-select: none;
 	z-index: 1000;
 	position: fixed;
-	top: 0.6rem;
+	top: 0.5rem;
 	right: 0.5rem;
 	background: transparent;
 	cursor: pointer;
@@ -25,7 +25,7 @@
 	stroke-linecap: round;
 	z-index: 1000;
 	position: fixed;
-	top: 1rem;
+	top: 0.8rem;
 	right: 1rem;
 	background: transparent;
 	cursor: pointer;
@@ -53,7 +53,7 @@
 	stroke-dashoffset: -86px;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
 	.line {
 		display: block;
 	}

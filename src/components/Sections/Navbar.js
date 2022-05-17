@@ -26,8 +26,8 @@ const NavContainer = styled.div`
 const LogoDiv = styled(Link)`
 	margin: auto 2.5rem;
 
-	@media screen and (max-width: 481px) {
-		margin: auto 1.5rem;
+	@media screen and (max-width: 480px) {
+		margin: 1rem 1.5rem;
 	}
 `;
 

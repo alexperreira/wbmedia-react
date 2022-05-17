@@ -1,21 +1,46 @@
 import React from 'react';
 import Button from '../UI/Button';
 import Hello from '../UI/Hello';
-import styles from './Seniors.module.css';
-import classes from './AllPackages.module.css';
+import styled from 'styled-components';
+import bannerImage from '../../assets/images/aurora-road.jpg';
+import heroImage from '../../assets/images/senior-paddle-shore.jpg';
 import ImageSlider from '../UI/Slider/ImageSlider';
 import { SeniorsSliderData } from '../UI/Slider/SliderData';
+import {
+	PackageHero,
+	Container,
+	Package,
+	Title,
+	Price,
+	Overlay,
+	BannerStyle,
+	Tagline,
+} from './Packages';
+
+const Banner = styled.div`
+	${BannerStyle}
+	background-image: url(${bannerImage});
+`;
+
+const Hero = styled.div`
+	${PackageHero}
+	background-image: url(${heroImage});
+
+	@media screen and (max-width: 480px) {
+		background-position: 35% center;
+	}
+`;
 
 const Seniors = () => {
 	return (
-		<div className={styles.pageBG}>
-			<div className={`${styles.seniors} ${classes.packagesHero}`} />
+		<div>
+			<Hero />
 
-			<div className={classes.container}>
+			<Container>
 				<Hello text={'Seniors'} />
-				<div className={classes.package}>
-					<h3 className={classes.title}>Package 1</h3>
-					<h2 className={classes.price}>$250</h2>
+				<Package>
+					<Title>Package 1</Title>
+					<Price>$250</Price>
 					<ul>
 						<li>1 hr session</li>
 						<li>30-40 edited photos</li>
@@ -23,10 +48,10 @@ const Seniors = () => {
 						<li>1 location</li>
 						<li>Print release and online gallery</li>
 					</ul>
-				</div>
-				<div className={classes.package}>
-					<h3 className={classes.title}>Package 2</h3>
-					<h2 className={classes.price}>$350</h2>
+				</Package>
+				<Package>
+					<Title>Package 2</Title>
+					<Price>$350</Price>
 					<ul>
 						<li>1 1/2 hour session</li>
 						<li>50-60 edited photos</li>
@@ -34,10 +59,10 @@ const Seniors = () => {
 						<li>2 locations</li>
 						<li>Print release and online gallery</li>
 					</ul>
-				</div>
-				<div className={classes.package}>
-					<h3 className={classes.title}>Package 3</h3>
-					<h2 className={classes.price}>$500</h2>
+				</Package>
+				<Package>
+					<Title>Package 3</Title>
+					<Price>$500</Price>
 					<ul>
 						<li>2 hour session</li>
 						<li>100+ edited photos</li>
@@ -45,14 +70,14 @@ const Seniors = () => {
 						<li>As many locations as we can squeeze in!**</li>
 						<li>Print release and online gallery</li>
 					</ul>
-				</div>
-			</div>
-			<div className={styles.banner}>
-				<div className={classes.overlay}>
-					<h4 className={classes.tagline}>Ready to book with me?</h4>
+				</Package>
+			</Container>
+			<Banner>
+				<Overlay>
+					<Tagline>Ready to book with me?</Tagline>
 					<Button text='Inquire here' />
-				</div>
-			</div>
+				</Overlay>
+			</Banner>
 			<div>
 				<ImageSlider slides={SeniorsSliderData} />
 			</div>
