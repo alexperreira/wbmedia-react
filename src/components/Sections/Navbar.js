@@ -17,6 +17,10 @@ const NavContainer = styled.div`
 	background-color: rgba(255, 255, 255, 0.9);
 	/* background: linear-gradient(to bottom, #fff 0%, #1c00ff00 100%); */
 	z-index: 100;
+
+	@media screen and (max-width: 1200px) {
+		height: 90px;
+	}
 `;
 
 const LogoDiv = styled(Link)`
