@@ -28,10 +28,13 @@ const Hero = styled.div`
 `;
 
 const Weddings = () => {
+	const mediaQuery = window.matchMedia('(max-width: 480px)');
 	return (
 		<div>
 			<Hero />
-			<Container>
+			<Container
+				style={mediaQuery.matches ? { height: '85rem' } : { height: '40rem' }}
+			>
 				<Hello text={'Weddings'} />
 				<Package>
 					<Title>Package 1</Title>

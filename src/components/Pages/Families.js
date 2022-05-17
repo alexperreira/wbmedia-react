@@ -26,6 +26,12 @@ const Hero = styled.div`
 	background-image: url(${heroImage});
 `;
 
+const style = {
+	width: '100%',
+	maxWidth: '100%',
+	justifyContent: 'center',
+};
+
 const Families = () => {
 	return (
 		<div>
@@ -33,7 +39,7 @@ const Families = () => {
 
 			<Container>
 				<Hello text={'Families'} />
-				<Package style={{ width: '100%', maxWidth: '600px' }}>
+				<Package style={style}>
 					<Price style={{ textAlign: 'center' }}>
 						Packages range from $200 to $400. Please inquire and let me know the
 						number of family members and ages.

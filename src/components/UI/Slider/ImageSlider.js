@@ -54,6 +54,7 @@ const ImageSlider = ({ slides }) => {
 								? `${styles.active} ${styles.slide}`
 								: `${styles.slide}`
 						}
+						key={index}
 					>
 						{index === current && (
 							<img

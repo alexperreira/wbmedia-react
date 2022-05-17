@@ -19,16 +19,18 @@ export const Container = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 40rem;
+	align-content: center;
+	height: auto;
 	max-width: 95%;
 
 	@media screen and (max-width: 769px) {
-		padding-left: 10px;
+		padding-left: 0.6rem;
 	}
 
 	@media screen and (max-width: 480px) {
 		flex-direction: column;
-		height: auto;
+		padding-left: 0.8rem;
+		justify-content: center;
 	}
 `;
 
@@ -53,7 +55,7 @@ export const Package = styled.div`
 	}
 
 	& > ul > li {
-		line-height: 1rem;
+		line-height: 1.2rem;
 		padding: 0.5rem;
 	}
 
@@ -61,7 +63,6 @@ export const Package = styled.div`
 		height: 20rem;
 		width: auto;
 		padding: 0;
-		justify-content: start;
 	}
 `;
 
