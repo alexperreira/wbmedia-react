@@ -64,7 +64,7 @@ img.decorImg2 {
 }
 
 div.aboutText {
-	z-index: 100000;
+	z-index: 1000;
 	margin-left: 60px;
 }
 

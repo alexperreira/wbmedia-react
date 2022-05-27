@@ -86,7 +86,7 @@ export const BannerStyle = css`
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 `;
 
 export const Overlay = styled.div`

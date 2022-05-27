@@ -7,7 +7,7 @@ import { menuData } from '../../../data/menuData';
 
 const DropdownContainer = styled.div`
 	position: fixed;
-	z-index: 999;
+	z-index: 10000;
 	width: 100%;
 	height: 100%;
 	background: #e2a42c;
